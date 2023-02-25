@@ -7,9 +7,10 @@ const loadQuote = () =>{
 
 const displayQuote = quote =>{
     const blockQuote =document.getElementById('quote');
-    blockQuote.innerHTML = quote =>{
-        
-    }
+    // console.log(quote.quote)
+    blockQuote.innerHTML = quote.quote;
+    
+    
 }
 
 loadQuote();
