@@ -13,10 +13,14 @@ const displayCountries = countries =>{
         const countryDiv = document.createElement('div');
         countryDiv.classList.add('country');
         countryDiv.innerHTML =`
-            <h3>Name: ${country.name.common}</h3>
-            <p>Capital: ${country.capital ? country.capital[0] : 'No Capital'}</p>
+            <div>
+                <h3>Name: ${country.name.common}</h3>
+                <p>Capital: ${country.capital ? country.capital[0] : 'No Capital'}</p>
+            </div>
+
 
         `;
+        console.log(countryDiv)
         countriesContainer.appendChild(countryDiv);
 
      });   
